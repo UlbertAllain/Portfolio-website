@@ -38,7 +38,6 @@ export const projects: Project[] = [
     tech: ["Next.js", "Firebase", "Recharts", "Tailwind CSS"],
     image: "/projects/financetracker.png",
     liveUrl: "https://manageurfinance.vercel.app", // GANTI DENGAN URL VERCEL KAMU
-    githubUrl: "https://github.com/timotius/finance-tracker", 
     featured: true, // <-- UBAH JADI TRUE
   },
 ];
