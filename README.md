@@ -1,36 +1,36 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Developer Portfolio (Earlier Version)
 
-## Getting Started
+Website portfolio pribadi berbasis Next.js yang menampilkan profil, keahlian, proyek, dan kanal kontak. Repository ini adalah implementasi portfolio terdahulu; konten proyek disimpan di `data/projects.ts`.
 
-First, run the development server:
+## Konten
+
+Homepage dirakit dari komponen `Hero`, `About`, `Projects`, `Contact`, `Navbar`, dan `Footer`. Data proyek saat ini memuat Finish Your Quest, Sistem Rekomendasi Ban Motor, dan Personal Finance Tracker.
+
+## Stack
+
+Next.js 16, React 19, TypeScript, Tailwind CSS 4, Framer Motion, dan Lucide React.
+
+## Setup
 
 ```bash
+npm ci
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Buka `http://localhost:3000`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Mengubah isi portfolio
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Edit daftar dan tautan proyek di `data/projects.ts`.
+- Ubah section pada `components/`.
+- Atur layout/styling umum di `app/globals.css`.
+- Simpan screenshot proyek di `public/projects/` dan cocokkan path gambar dengan data.
 
-## Learn More
+## Pemeriksaan
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run lint
+npm run build
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Tautan demo dan informasi profil perlu diperiksa sebelum deployment. Repository ini terpisah dari portfolio terbaru sehingga kontennya tidak otomatis tersinkron dengan versi lain.
